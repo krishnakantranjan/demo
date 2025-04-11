@@ -8,8 +8,6 @@ node_modules/
 .env
 
 # Ignore build directories
-dist/
-build/
 
 # Ignore system files
 .DS_Store
