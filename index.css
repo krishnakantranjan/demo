@@ -1,29 +1,126 @@
-/* index.css */
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+/* Reset some defaults */
+* {
     margin: 0;
-    padding: 2rem;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f6f9fc;
     color: #333;
-}
-
-h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Header styling */
+  .header {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo {
+    height: 50px;
+    width: auto;
+  }
+  
+  .header-title {
+    font-size: 1.8rem;
+    font-weight: bold;
     color: #2c3e50;
+  }
+  
+  .profile-img img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #3498db;
+  }
+  
+  /* Login box styling */
+  .login-box {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    width: 90%;
+    max-width: 400px;
     text-align: center;
-}
-
-ul {
-    list-style-type: circle;
-    max-width: 300px;
-    margin: 2rem auto;
-    padding: 1rem;
-    background-color: #fff;
+  }
+  
+  .login-box h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-li {
-    padding: 0.5rem 0;
-    font-size: 1.1rem;
-}
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .login-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .login-box h4 {
+    margin-top: 20px;
+    font-size: 0.95rem;
+  }
+  
+  .login-box a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .header-title {
+      font-size: 1.5rem;
+    }
+  
+    .login-box {
+      padding: 20px;
+    }
+  
+    .login-btn {
+      font-size: 0.95rem;
+    }
+  }
